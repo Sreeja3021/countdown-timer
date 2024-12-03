@@ -1,0 +1,81 @@
+/* Basic styling for the page */
+body {
+  font-family: 'Courier New', Courier, monospace; /* Font style */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('image.png'); /* Background image */
+  background-size: cover;  /* Ensure the image covers the entire screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  transition: background-color 1s;
+}
+
+h1 {
+  color: #222;
+  font-family: 'Georgia', serif;
+}
+
+label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+input {
+  padding: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #a78928;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Verdana', sans-serif;
+}
+
+button:hover {
+  background-color: #732188;
+}
+
+#demo {
+  font-size: 1.5em;
+  color: #e63946;
+  margin-top: 20px;
+}
+
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 0, 157);
+  opacity: 0.9;
+  animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+  100% {
+      transform: translateY(100vh) rotate(360deg);
+  }
+}

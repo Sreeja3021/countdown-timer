@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TIMER</h1>
+  
+  <!-- Input field for the user to choose the date and time -->
+  <label for="meeting-time"></label>
+  <input
+    type="datetime-local"
+    id="meeting-time"
+    name="meeting-time"
+    min="2024-11-12T12:00"
+    max="2025-12-14T00:00" />
+
+  <!-- Button to start the countdown timer -->
+  <p><button onclick="startTimer()">START</button></p> 
+
+  <!-- Paragraph to display the countdown -->
+  <p id="demo"></p>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
